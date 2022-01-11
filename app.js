@@ -39,7 +39,7 @@ app.get("/",(req,res)=>{
     res.render("home",{
       startingContent:homeStartingContent,
       posts:posts});
-}, 1000);
+}, 10);
 
 });
 

@@ -34,9 +34,13 @@ app.get("/",(req,res)=>{
   Blog.find({},(err,foundDoc)=>{
     posts = foundDoc.slice()  //slice -> copies the array content
   })
-  res.render("home",{
-    startingContent:homeStartingContent,
-    posts:posts});
+  setTimeout(function(){
+    //do what you need here
+    res.render("home",{
+      startingContent:homeStartingContent,
+      posts:posts});
+}, 1000);
+
 });
 
 app.get("/posts/:postName",(req,res)=>{
@@ -81,11 +85,7 @@ app.post("/compose",(req,res)=>{
   //posts.push(post);
   blog.save()
 
-  setTimeout(function(){
-    //do what you need here
-    res.redirect("/");
-}, 1000);
-
+  res.redirect("/");
 })
 
 app.get("/delete/:postName",(req,res)=>{

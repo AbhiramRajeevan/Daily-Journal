@@ -80,7 +80,12 @@ app.post("/compose",(req,res)=>{
   const blog = new Blog(resp)
   //posts.push(post);
   blog.save()
-  res.redirect("/");
+
+  setTimeout(function(){
+    //do what you need here
+    res.redirect("/");
+}, 1000);
+
 })
 
 app.get("/delete/:postName",(req,res)=>{

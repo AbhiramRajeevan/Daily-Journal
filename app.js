@@ -7,7 +7,7 @@ var _ = require('lodash');
 const mongoose = require("mongoose")
 require('dotenv').config()
 
-mongoose.connect("mongodb+srv://" + process.env.USER + ":" + process.env.PASS + "@cluster0.uulti.mongodb.net/blogsDB");
+mongoose.connect("mongodb+srv://" + process.env.USER + ":"  + process.env.PASS + "@cluster0.uulti.mongodb.net/blogsDB");
 
 const blogSchema ={
   title : String,

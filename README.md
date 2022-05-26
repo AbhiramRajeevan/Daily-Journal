@@ -1,11 +1,14 @@
 # Daily-Journal
 A blog website with node backend and mongodb database
 
-<h1>Compose</h1>
-Got to route /compose
+<h2>Compose</h2>
+Go to route /compose
+
+<h2>To View Post</h2>
+Go to route /{postname}
 
 
-
-Deployed At https://daily-journal-1.herokuapp.com/
+<h2>Deployed At</h2>
+https://daily-journal-1.herokuapp.com/
 
 
